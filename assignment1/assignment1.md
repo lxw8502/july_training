@@ -1,6 +1,6 @@
 # Assignment1
 
-### 1. What is non-breaking in &nbsp;?
+### 1. What is non-breaking in \&nbsp;?
 A non-breaking space is a space that will not break into a new line. Two words separated by a non-breaking space will stick together (not break into a new line).
 
 
