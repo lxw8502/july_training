@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="names"></ul>
+    <script>
+        var personnel = [
+
+            {
+        
+            id: 5,
+        
+            name: "Luke Skywalker",
+        
+            pilotingScore: 98,
+        
+            shootingScore: 56,
+        
+            isForceUser: true,
+        
+            },
+        
+            {
+        
+            id: 82,
+        
+            name: "Sabine Wren",
+        
+            pilotingScore: 73,
+        
+            shootingScore: 99,
+        
+            isForceUser: false,
+        
+            },
+        
+            {
+        
+            id: 22,
+        
+            name: "Zeb Orellios",
+        
+            pilotingScore: 20,
+        
+            shootingScore: 59,
+        
+            isForceUser: false,
+        
+            },
+        
+            {
+        
+            id: 15,
+        
+            name: "Ezra Bridger",
+        
+            pilotingScore: 43,
+        
+            shootingScore: 67,
+        
+            isForceUser: true,
+        
+            },
+        
+            {
+        
+            id: 11,
+        
+            name: "Caleb Dume",
+        
+            pilotingScore: 71,
+        
+            shootingScore: 85,
+        
+            isForceUser: true,
+        
+            },
+        
+        ];
+        var names = document.getElementById("names");
+        var content = "";
+        personnel.map(function(person, index){
+            content += `<li>${person.name}</li>`
+        });
+        names.innerHTML = content;
+
+    </script>
+</body>
+</html>

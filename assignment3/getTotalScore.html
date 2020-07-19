@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Map:</p>
+        <p>piloting total score of force users only:<span id="pilotingScore1"></span></p>
+        <p>shooting total score of force users only:<span id="shootingScore1"></span></p>
+    </div>
+    <div>
+        <p>Reduce:</p>
+        <p>piloting total score of force users only:<span id="pilotingScore2"></span></p>
+        <p>shooting total score of force users only:<span id="shootingScore2"></span></p>
+    </div>
+    <div>
+        <p>Filter:</p>
+        <p>piloting total score of force users only:<span id="pilotingScore3"></span></p>
+        <p>shooting total score of force users only:<span id="shootingScore3"></span></p>
+    </div>
+
+    <script>
+        var personnel = [
+
+        {
+    
+        id: 5,
+    
+        name: "Luke Skywalker",
+    
+        pilotingScore: 98,
+    
+        shootingScore: 56,
+    
+        isForceUser: true,
+    
+        },
+    
+        {
+    
+        id: 82,
+    
+        name: "Sabine Wren",
+    
+        pilotingScore: 73,
+    
+        shootingScore: 99,
+    
+        isForceUser: false,
+    
+        },
+    
+        {
+    
+        id: 22,
+    
+        name: "Zeb Orellios",
+    
+        pilotingScore: 20,
+    
+        shootingScore: 59,
+    
+        isForceUser: false,
+    
+        },
+    
+        {
+    
+        id: 15,
+    
+        name: "Ezra Bridger",
+    
+        pilotingScore: 43,
+    
+        shootingScore: 67,
+    
+        isForceUser: true,
+    
+        },
+    
+        {
+    
+        id: 11,
+    
+        name: "Caleb Dume",
+    
+        pilotingScore: 71,
+    
+        shootingScore: 85,
+    
+        isForceUser: true,
+    
+        },
+    
+    ];
+    var pilotingScore1 = document.getElementById("pilotingScore1");
+    var shootingScore1 = document.getElementById("shootingScore1");
+    var totalPilotingScore1 = 0, totalShootingScore1 = 0;
+    personnel.map(function(person, index){
+        if(person.isForceUser){
+            totalPilotingScore1 += person.pilotingScore;
+            totalShootingScore1 += person.shootingScore;
+        }
+    });
+    pilotingScore1.innerHTML = totalPilotingScore1;
+    shootingScore1.innerHTML = totalShootingScore1;
+
+
+    var pilotingScore2 = document.getElementById("pilotingScore2");
+    var shootingScore2 = document.getElementById("shootingScore2");
+    var totalPilotingScore2 = 0, totalShootingScore2 = 0;
+    personnel.reduce(function(prePerson, curPerson, index){
+        if(curPerson.isForceUser){
+            totalPilotingScore2 += curPerson.pilotingScore;
+            totalShootingScore2 += curPerson.shootingScore;
+        }
+    }, 0);
+    pilotingScore2.innerHTML = totalPilotingScore2;
+    shootingScore2.innerHTML = totalShootingScore2;
+
+
+    var pilotingScore3 = document.getElementById("pilotingScore3");
+    var shootingScore3 = document.getElementById("shootingScore3");
+    var totalPilotingScore3 = 0, totalShootingScore3 = 0;
+    personnel.filter(function(person, index){
+        if(person.isForceUser){
+            totalPilotingScore3 += person.pilotingScore;
+            totalShootingScore3 += person.shootingScore;
+        }
+    });
+    pilotingScore3.innerHTML = totalPilotingScore3;
+    shootingScore3.innerHTML = totalShootingScore3;
+
+    </script>
+</body>
+</html>
