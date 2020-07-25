@@ -4,8 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>question 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            margin: 0 auto;
+            width: 400px
+        }
+        .searchBar{
+            padding: 15px 30px;
+            background-color: #599AB8;
+        }
+        .content{
+            margin: 20px 0 0 10px;
+            
+        }
+        .image{
+            width: 50px;
+            height: 50px;
+            
+        }
+        input{
+            width:250px;
+            height: 30px;
+            outline: none;
+            border-width: 0;
+        }
+        .wrapper{
+            padding-left:30px;
+            background-color: #fff;
+            background-image: url(./img/search.png);
+            background-repeat: no-repeat;
+            background-position: 5px 5px;
+            background-size: 20px 20px;
+        }
+        ul{
+            list-style: none;
+        }
+        .item{
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 10px;
+
+        }
+        span{
+            display: inline-block;
+            overflow: hidden;
+
+        }
+        .text{
+            width: 320px;
+            height: 50px;
+            margin-left: 10px;
+        }
+        
+    </style>
 </head>
-<body>
-    <h1>Question 2 </h1>
+<body ng-app="app">
+    <div class="box" ng-controller="search">
+        <div class="searchBar">
+            <div class="wrapper">
+                <input type="text" placeholder="Enter your search terms" ng-model="text" ng-change="searchItem(text)">
+            </div>
+        </div>
+        <div class="content">
+            <ul>
+                <li class="item" ng-repeat="article in articles">
+                    <span>
+                        <img class="image" ng-src={{article.img}} alt="">
+                    </span>
+                    <span class="text">
+                        {{article.text}}
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./angular.js"></script>
+    <script src="./q2.js"></script>  
 </body>
 </html>

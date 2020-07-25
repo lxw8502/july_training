@@ -4,8 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>quesion 1</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color: #62a2bb;
+            color: white;
+            font-weight: bold;
+        }
+        .box{
+            margin: 0 auto;
+            width: 300px;
+        }
+        .title{
+            color: white;
+            line-height: 80px;
+            text-align: center;
+        }
+        .content{
+            list-style: none;
+            text-align: center;
+            width: 260px;
+            margin-left: 20px;
+            padding-bottom: 10px;
+        }
+        .item{
+            line-height: 50px;
+            margin-bottom: 10px;
+            background-color: #db626c;
+            border-radius: 3px;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        .front{
+            float: left;
+        }
+        .end{
+            float: right;
+        }
+        .foot{
+            line-height: 50px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            padding: 0 20px;
+            border-top: 1px solid white;
+        }
+
+    </style>
 </head>
-<body>
-    <h1>Question 1</h1>
+<body ng-app="app">
+    <div class="box" ng-controller="count">
+        <h1 class="title">services</h2>
+        <ul class="content">
+            <li class="item" ng-repeat="service in services" ng-click="add(service)">
+                <span class="front">{{service.type}}</span>
+                <span class="end" ng-model="service.price">{{service.price | currency}}</span>
+            </li>
+            <li class="foot">
+                <span class="front">Total: </span>
+                <span class="end">{{total | currency}}</span>
+            </li>
+        </ul>
+
+
+    </div>
+    <script src="./angular.js"></script>
+    <script src="./q1.js"></script>
 </body>
 </html>
