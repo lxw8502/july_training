@@ -187,10 +187,10 @@ db.restaurants.find(
 ```
 
 25. Write a MongoDB query to arrange the name of the restaurants in ascending order along with all the columns.      
-```db.restaurants.find().sort({"name": 1 });```
+```db.restaurants.find().sort({"name": 1});```
 
 26. Write a MongoDB query to arrange the name of the restaurants in descending along with all the columns.     
-```db.restaurants.find().sort({"name": -1 });```
+```db.restaurants.find().sort({"name": -1});```
 
 27. Write a MongoDB query to arranged the name of the cuisine in ascending order and for that same cuisine borough should be in descending order.         
 ```db.restaurants.find().sort({"cuisine": 1, "borough": -1});```
@@ -201,13 +201,13 @@ db.restaurants.find({"address.street": {$exists: true }}).size() == db.restauran
 ```
 
 29. Write a MongoDB query which will select all documents in the restaurants collection where the coord field value is Double.        
-```db.restaurants.find({ "address.coord": { $type: 1 } });```
+```db.restaurants.find({ "address.coord": {$type: 1}});```
 
 30. Write a MongoDB query which will select the restaurant Id, name and grades for those restaurants which returns 0 as a remainder after dividing the score by 7.    
 ```
     db.restaurants.find(
         {"grades.score": {$mod: [7, 0]}}, 
-        {"restaurant_id": 1, name: 1, grades: 1 }
+        {"restaurant_id": 1, "name": 1, "grades": 1}
     );
 ```
 31. Write a MongoDB query to find the restaurant name, borough, longitude and attitude and cuisine for those restaurants which contains 'mon' as three letters somewhere in its name. 
