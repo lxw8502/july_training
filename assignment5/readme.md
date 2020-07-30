@@ -51,7 +51,7 @@ mongoimport --db assignment5 --collection restaurants --file ./restaura ts.json
 6. Write a MongoDB query to display the first 5 restaurant which is in the borough Bronx.      
     ```db.restaurants.find({borough: 'Bronx'}).limit(5);```
 
-7.Write a MongoDB query to display the next 5 restaurants after skipping first 5 which are in the borough Bronx.      
+7. Write a MongoDB query to display the next 5 restaurants after skipping first 5 which are in the borough Bronx.      
     ```db.restaurants.find({borough: 'Bronx'}).skip(5).limit(5);```
 
 8. Write a MongoDB query to find the restaurants who achieved a score more than 90.       
@@ -106,10 +106,12 @@ db.restaurants.find(
 ```
 
 15. Write a MongoDB query to find the restaurant Id, name, borough and cuisine for those restaurants which contain 'ces' as last three letters for its name.    
-```db.restaurants.find(
-    {"name": /ces$/ }, 
-    {"restaurant_id": 1, "name": 1, "borough": 1, "cuisine": 1}
-);```
+```
+    db.restaurants.find(
+        {"name": /ces$/ }, 
+        {"restaurant_id": 1, "name": 1, "borough": 1, "cuisine": 1}
+    );
+```
 
 16. Write a MongoDB query to find the restaurant Id, name, borough and cuisine for those restaurants which contain 'Reg' as three letters somewhere in its name.    
 ```
