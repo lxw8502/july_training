@@ -7,7 +7,7 @@ The Web Page should have the below:
 2.	A form where people can register for this event with the below details: a. Name : should allow only alphabets. b. Age : should be equal to or greater than 18. c. Email ID : should be a valid email id format d. City: On clicking on the text box, Should display a list that contains city names as "Rajkot", "Vizag" and "Bangalore" but whatever the user enters also should be shown in the list.       
 Note: All entries are "mandatory".        
 ![image](./img/assignment1.jpg)
-[Code](./assignment1.html)
+[Code link](./assignment1.html)
 
 
 ### assignment 2
@@ -18,7 +18,7 @@ Note: All entries are "mandatory".
 5.	(Optional) both the sections should also give the option to the user to select the color which will be used as the background color for that section.      
 
 ![image](./img/assignment2.jpg)
-[Code](./assignment2.html)
+[Code link](./assignment2.html)
 
 
 ### assignment 3
@@ -37,5 +37,5 @@ a. Use Canvas and related methods to draw the line chart.
 b. You are free to use any styles/colors of your choice      
    
 ![image](./img/assignment3.jpg)
-[Code](./assignment3.html)
+[Code link](./assignment3.html)
 
