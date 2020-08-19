@@ -17,7 +17,7 @@ Note: All entries are "mandatory".
 4.	Under the view area, there should be only 2 buttons "play" and "pause" which the user can use to play or pause the video of the week.      
 5.	(Optional) both the sections should also give the option to the user to select the color which will be used as the background color for that section.      
 
-![image](./img/assignment2.jpg)
+![image](./img/assignment-2.jpg)
 [Code link](./assignment2.html)
 
 
