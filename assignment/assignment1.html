@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            margin: 0 auto;
+        }
+        img{
+            width:50px;
+        }
+        .title{
+            display:inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <img src="./img/download.jpg" alt="">
+            <h1 class="title">Xena Events</h1>
+            <p>There will hold a hot balloon riding event from Feb 28th 2017 onwards for 5 days. Please input your informatin sign up.</p>
+        </div>
+        <div>
+            <form > 
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Name</label>
+                  <input type="input" name="name" class="form-control" id="exampleInputEmail1" onkeydown="return alphaOnly(event);">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail2" >Age</label>
+                    <input type="number" name="age" class="form-control" id="exampleInputEmail2" onblur="mustOlder18(event)">
+                  </div>                
+                  <div class="form-group">
+                    <label for="exampleInputEmail3">Email address</label>
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail3">
+                  </div>                
+                  <div class="form-group">
+                    <label for="exampleInputEmail4">City</label>
+                    <input type="input" name="city" class="form-control" id="exampleInputEmail4" list="tipbox">
+                    <datalist id="tipbox" >
+                        <option>Rajkot</option>
+                        <option>Vizag</option>
+                        <option>Bangalore</option>
+                    </datalist>
+                  </div>
+
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+              </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        function alphaOnly(event) {
+            var key = event.keyCode;
+            return ((key >= 65 && key <= 90) || key == 8);
+        };
+
+        function mustOlder18(event){
+            var value = event.target.value;
+            if(value < 18){
+                alert("Your age must equal or greater than 18.")
+            }
+        }
+    </script>
+</body>
+</html>
