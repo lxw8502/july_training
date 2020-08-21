@@ -7,7 +7,13 @@ https://jsonplaceholder.typicode.com/posts
 
 
 ![page](./1.jpg)
+
+## App.js
 ![code1](./2.jpg)
+
+## search.js
 ![code2](./3.jpg)
-[project](./fectchtitle)
+
+##project folder
+[project](./fetchtitle)
 
