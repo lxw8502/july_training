@@ -14,6 +14,6 @@ https://jsonplaceholder.typicode.com/posts
 ## search.js
 ![code2](./3.jpg)
 
-##project folder
-[project](./fetchtitle)
+## project folder
+[project](./fetchtitel)
 
