@@ -1,8 +1,12 @@
-# Assignment 08/03/2020
+# Assignment 7
 
-### 1.Implement Update and delete in the jest application
-[question 1 url](https://github.com/lxw8502/jestDomes)
+1. Negative Matcher.
+2. toBeDefined, toBeUndefined
+3. toBeNull
+4. toContain
+5. toBeNaN
+6. toThrow, toThrowError
+7. toMatch
+8. Match anything
 
-### 2.Change the color of the bars and move the text inside
-
-[question 2 url](./question2.html)
+[test code](./calculator.spec.js)
