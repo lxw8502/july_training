@@ -1,4 +1,4 @@
-# HTML5 revision assignments
+# HTML5 revision - assignments 12
 
 ### assignment 1
 Create a Web Page for an Event Management Company "Xena Events" which is conducting a hot balloon riding event from Feb 28th 2017 onwards for 5 days.      
