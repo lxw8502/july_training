@@ -2,7 +2,9 @@
 
 1. What does describe do in Jasmine?  
     ```
-    In Jasmine, describe function is for grouping related specs. The string parameter is for naming the collection of specs, and will be concatenated with specs to make a spec’s full name. This helps in finding specs in a large suite. 
+    In Jasmine, describe function is for grouping related specs. 
+    The string parameter is for naming the collection of specs, and will be concatenated with specs to make a spec’s full name. 
+    This helps in finding specs in a large suite. 
     ```    
 
 2. What does SpyOn do in Jasmine?
@@ -12,7 +14,8 @@
 
 3. Code Coverage
     ```
-    Code coverage is a metric that can help you understand how much of your source is tested. It's a very useful metric that can help you assess the quality of your test suite
+    Code coverage is a metric that can help you understand how much of your source is tested. 
+    It's a very useful metric that can help you assess the quality of your test suite.
     ```
     ```
     The common metrics that you might see mentioned in your coverage reports include:     
@@ -25,11 +28,16 @@
     ```
 4. What e2e in angular
     ```
-    End to end testing (E2E) or also known as integration testing is a great way to make sure at a high-level overview that our applications function correctly. Commonly we use E2E tests to help ensure our components are working correctly together to create an entirely functioning feature cohesively. E2E tests are not Unit tests. Unit tests should test a small isolated piece of code while the E2E test is a high-level test of a feature or several interactions.
+    End to end testing (E2E) or also known as integration testing is a great way to make sure at a high-level overview that our applications function correctly. 
+    Commonly we use E2E tests to help ensure our components are working correctly together to create an entirely functioning feature cohesively. 
+    E2E tests are not Unit tests. Unit tests should test a small isolated piece of code while the E2E test is a high-level test of a feature or several interactions.
 
-    The Angular CLI gives us all the functionality we need for scaffolding, building and testing our Angular applications. This scaffolding the Angular CLI provides includes unit tests and the setup needed for our E2E tests.       
-    Our E2E tests are powered by a testing library called Protractor. Protractor is an E2E test runner that can take scenario tests and run them in the browser.       
-    The test code itself is written using Jasmine. Jasmine is a testing library the provides all the assertion and utility functions needed to write unit and E2E tests.     
+    The Angular CLI gives us all the functionality we need for scaffolding, building and testing our Angular applications. 
+    This scaffolding the Angular CLI provides includes unit tests and the setup needed for our E2E tests.       
+    Our E2E tests are powered by a testing library called Protractor. 
+    Protractor is an E2E test runner that can take scenario tests and run them in the browser.       
+    The test code itself is written using Jasmine. 
+    Jasmine is a testing library the provides all the assertion and utility functions needed to write unit and E2E tests.     
     In Angular CLI project we have a folder named e2e. We can write E2E test code in this folder.
     ```
 
